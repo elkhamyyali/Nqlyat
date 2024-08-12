@@ -26,6 +26,8 @@ const ImageOverlaySection = () => {
       <div className="relative container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between mb-16">
           <p className="w-full md:w-1/2 text-base mb-4 md:mb-0 md:transform md:translate-y-16 transition-transform duration-300 ease-in-out">
+            Discover Our Innovative Solutions Discover Our Innovative Solutions
+            Discover Our Innovative Solutions Discover Our Innovative Solutions
             Discover Our Innovative Solutions
             <span className="text-orange-700 font-inter">
               Experience Efficiency
@@ -36,6 +38,8 @@ const ImageOverlaySection = () => {
             <span className="text-orange-700 font-inter">
               Experience Efficiency
             </span>
+            and Reliability Like Never Before and Reliability Like Never Before
+            and Reliability Like Never Before and Reliability Like Never Before
             and Reliability Like Never Before
           </p>
         </div>

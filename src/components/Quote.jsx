@@ -5,7 +5,7 @@ import { Calendar } from "lucide-react";
 
 const CompetitiveQuoteForm = () => {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
       <img
         src={backgroundImage}
@@ -16,20 +16,20 @@ const CompetitiveQuoteForm = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-25"></div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center mt-20 h-full p-4 md:p-8">
-        <h1 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 sm:p-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center">
           <span className="text-orange-700">Get</span> A Competitive Instant
           Quote
         </h1>
-        <p className="text-base md:text-lg text-white mb-8 text-center">
+        <p className="text-base sm:text-lg text-white mb-6 text-center">
           Fill out the form for LTL and Full Truckload rates. Quick access
           without login!
         </p>
 
-        <div className="flex flex-col lg:flex-row w-full max-w-4xl mx-auto gap-4 lg:gap-6">
+        <div className="flex flex-col lg:flex-row w-full max-w-5xl mx-auto gap-4 lg:gap-6">
           {/* Form Section */}
-          <div className="glassmorphism p-4 md:p-6 rounded-lg shadow-lg lg:w-3/5">
-            <form className="grid grid-cols-1 gap-4">
+          <div className="flex-1 glassmorphism p-4 sm:p-6 rounded-lg shadow-lg">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-white">
                   Pickup Location
@@ -99,6 +99,7 @@ const CompetitiveQuoteForm = () => {
                 />
               </div>
 
+              {/* Adding extra inputs */}
               <div>
                 <label className="block text-sm font-medium text-white">
                   Delivery Location
@@ -154,7 +155,7 @@ const CompetitiveQuoteForm = () => {
           </div>
 
           {/* Image Section */}
-          <div className="lg:w-2/5">
+          <div className="hidden lg:block lg:w-2/5">
             <img
               src={sectionImage}
               alt="Descriptive Image"
